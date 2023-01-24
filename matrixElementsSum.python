@@ -1,0 +1,22 @@
+def solution(matrix):
+    
+    arr = []
+    subCounter = 0
+    elementCounter = 0 
+    for submatrix in matrix:
+        subCounter += 1
+        for element in submatrix:
+            arr.append(element)
+    for element in submatrix:
+        elementCounter+=1
+    counter = 0
+    array = []
+    
+    for i in range(len(arr)-1): 
+        if arr[i] == 0 and i < (len(arr)-elementCounter):
+            arr[i+elementCounter] = 0
+    
+    sum = 0 
+    for i in arr:
+        sum += i
+    return sum

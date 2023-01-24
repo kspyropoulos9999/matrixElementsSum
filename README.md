@@ -1,2 +1,9 @@
 # matrixElementsSum
-Program that solves a CodeSignal problem on matrices. There is more detail in the readme file
+After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there's a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, or any of the rooms below any of the free rooms.
+
+Given matrix, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don't appear below a 0).
+
+Program solves this challenge.
+
+
+![image](https://user-images.githubusercontent.com/104709508/214248337-6142ec00-4338-4930-92a4-5ab735d21552.png)

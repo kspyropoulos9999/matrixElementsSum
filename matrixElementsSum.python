@@ -3,12 +3,19 @@ def solution(matrix):
     arr = []
     subCounter = 0
     elementCounter = 0 
+    
+    # iterate through matrix and count submatrix quantity
     for submatrix in matrix:
         subCounter += 1
+        
+        # get elements in submatrix appended to arr array
         for element in submatrix:
             arr.append(element)
+            
+    # count elements in submatrix 
     for element in submatrix:
         elementCounter+=1
+        
     counter = 0
     array = []
     
@@ -17,6 +24,8 @@ def solution(matrix):
             arr[i+elementCounter] = 0
     
     sum = 0 
+    
+    # calculate sum of all rooms
     for i in arr:
         sum += i
     return sum
